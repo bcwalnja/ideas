@@ -1,0 +1,29 @@
+html, body {
+    height: 100svh;
+    margin: 0;
+}
+
+.box {
+  width: 100px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #f00;
+}
+
+.red.dark {
+  background-color: #400;
+}
+
+.yellow.dark {
+  background-color: #660;
+}

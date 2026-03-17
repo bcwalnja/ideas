@@ -1,4 +1,4 @@
-# Ideas (and snippets)
+# Ideas and Code Snippets
 
 The ideas at the top of this list are options for fun things to try to get a webpage to do. Following that, there are some simple code snippets as boilerplate material. These are not supposed to provide answers, but hopefully provide some helpful material for getting to the answers.
 
@@ -9,6 +9,7 @@ The ideas at the top of this list are options for fun things to try to get a web
 1. A Text‑Growing Button - every click makes it bigger
 1. A Traffic Light
 1. Click on the box to move it to a random corner
+1. Play a sound
 
 ## HTML Page Shell
 
@@ -47,6 +48,16 @@ html, body {
 }
 ```
 
+### How to turn a square into a circle
+
+This snippet turns a square into a circle.
+
+```css
+.round {
+    border-radius: 50%;
+}
+```
+
 ## JavaScript
 
 ### Random Number
@@ -67,4 +78,22 @@ This js will add or remove css styling information.
 ```js
 const box = document.querySelector('.box');
 box.classList.toggle('top');
+```
+
+### Timers
+
+This js snippet will run an event 1 second from now.
+
+```js
+setTimeout(() => {
+  console.log("timer fired");
+}, 1000); // 1000 ms = 1 second
+```
+
+This js snippet will repeat an event every second.
+
+```js
+setInterval(() => {
+  console.log("tick");
+}, 1000);
 ```
