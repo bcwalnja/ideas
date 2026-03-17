@@ -97,3 +97,20 @@ setInterval(() => {
   console.log("tick");
 }, 1000);
 ```
+
+### Play a Sound
+
+This js will play an A 440 Hz for 3 seconds.
+
+```js
+box.onclick = () => {
+  const ctx = new AudioContext();
+  const osc = ctx.createOscillator();
+
+  osc.frequency.value = 440;   // A4
+  osc.connect(ctx.destination);
+  osc.start();
+
+  setTimeout(() => osc.stop(), 3000);  // stop after 3 seconds
+};
+```
