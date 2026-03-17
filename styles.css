@@ -1,9 +1,13 @@
 html, body {
     height: 100svh;
+    margin: 0;
 }
 
 .box {
     height: 10%;
     width: 10%;
-    background: black;
+    border: solid 1px black;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
