@@ -47,3 +47,12 @@ html, body {
   border: 1px solid black;
 }
 ```
+
+## JavaScript
+Here's a JavaScript snippet that will get a random number.
+```js
+button.onclick = () => {
+  let rand = Math.floor(Math.random()*10)
+  document.querySelector('.box-for-rand').textContent = rand;
+};
+```
